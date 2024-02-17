@@ -1,0 +1,25 @@
+package com.lifelink.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Organs {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long orgId;
+
+	public long getOrgId() {
+		return orgId;
+	}
+
+	public void setOrgId(long orgId) {
+		this.orgId = orgId;
+	}
+	
+	
+
+}

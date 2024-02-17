@@ -1,0 +1,33 @@
+package com.lifelink.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lifelink.model.Insti;
+import com.lifelink.model.Organs;
+import com.lifelink.repos.InstiRepo;
+import com.lifelink.repos.OrgansRepo;
+
+@Service
+public class OrganService {
+	
+	
+	@Autowired
+	private OrgansRepo organsRepo;
+	
+	@Autowired
+	private InstiRepo instiRepo;
+	
+	public List<Insti> allInst(){
+		
+		return this.instiRepo.findAll();
+	}
+	
+	public List<Organs> organsbyInstName(String instName){
+		
+		return this.organsRepo.findOrgansByInstName(instName);
+	
+	}
+}

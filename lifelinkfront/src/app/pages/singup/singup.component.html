@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="signup-container">
+      <h2>Sign Up</h2>
+      <form (ngSubmit)="onSubmit()" class="signup-form">
+        <div class="form-group">
+          <label for="instName">Institution Name</label>
+          <input type="text" class="form-control" id="instName" name="instName" [(ngModel)]="signData.instName" required>
+        </div>
+        <div class="form-group">
+          <label for="instType">Institution Type</label>
+          <select class="form-control" id="instType" name="instType" [(ngModel)]="signData.instType" required>
+            <option value="NGO">NGO</option>
+            <option value="Hospital">Hospital</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="contactNo">Contact Number</label>
+          <input type="text" class="form-control" id="contactNo" name="contactNo" [(ngModel)]="signData.contactNo" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" class="form-control" id="email" name="email" [(ngModel)]="signData.email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+      <p class="login-link">Already have an account? <a routerLink="">Login here</a></p>
+    </div>
+  </div>
+  

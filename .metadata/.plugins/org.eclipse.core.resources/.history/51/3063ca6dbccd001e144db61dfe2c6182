@@ -1,0 +1,150 @@
+package com.lifelink.model;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Organs {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long orgId;
+	private String orgName;
+	private String duration;
+	private String instName;
+	private String bloodGroup;
+	private String age;
+	private String orgCondition;
+	private String history;
+	private String name;
+	private String height;
+	private String weight;
+	private String gender;
+	
+	
+	
+
+	public Organs(long orgId, String orgName, String duration, String instName, String bloodGroup, String age,
+			String orgCondition, String history, String name, String height, String weight, String gender) {
+		super();
+		this.orgId = orgId;
+		this.orgName = orgName;
+		this.duration = duration;
+		this.instName = instName;
+		this.bloodGroup = bloodGroup;
+		this.age = age;
+		this.orgCondition = orgCondition;
+		this.history = history;
+		this.name = name;
+		this.height = height;
+		this.weight = weight;
+		this.gender = gender;
+	}
+
+	public String getOrgCondition() {
+		return orgCondition;
+	}
+
+	public void setOrgCondition(String orgCondition) {
+		this.orgCondition = orgCondition;
+	}
+
+	public String getHeight() {
+		return height;
+	}
+
+	public void setHeight(String height) {
+		this.height = height;
+	}
+
+	public String getWeight() {
+		return weight;
+	}
+
+	public void setWeight(String weight) {
+		this.weight = weight;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	
+	public String getBloodGroup() {
+		return bloodGroup;
+	}
+
+	public void setBloodGroup(String bloodGroup) {
+		this.bloodGroup = bloodGroup;
+	}
+
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	
+
+	public String getHistory() {
+		return history;
+	}
+
+	public void setHistory(String history) {
+		this.history = history;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getDuration() {
+		return duration;
+	}
+
+	public void setDuration(String duration) {
+		this.duration = duration;
+	}
+
+	public String getInstName() {
+		return instName;
+	}
+
+	public void setInstName(String instName) {
+		this.instName = instName;
+	}
+
+	public String getOrgName() {
+		return orgName;
+	}
+
+	public void setOrgName(String orgName) {
+		this.orgName = orgName;
+	}
+
+	
+
+	public long getOrgId() {
+		return orgId;
+	}
+
+	public void setOrgId(long orgId) {
+		this.orgId = orgId;
+	}
+	
+	
+
+}

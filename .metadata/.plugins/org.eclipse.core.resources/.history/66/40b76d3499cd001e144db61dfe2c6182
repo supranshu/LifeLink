@@ -1,0 +1,10 @@
+package com.lifelink.model;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Organs {
+	
+	
+
+}

@@ -1,0 +1,75 @@
+package com.lifelink.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.lifelink.model.Insti;
+import com.lifelink.model.Organs;
+import com.lifelink.repos.OrgansRepo;
+import com.lifelink.service.OrganService;
+
+@RestController
+@RequestMapping("/lifelink/v1")
+public class HomeController {
+	
+	@Autowired
+	private OrganService service;
+	
+	@Autowired
+	private OrgansRepo organsRepo;
+	
+	@GetMapping("/")
+	public List<Insti> getAllInst() {
+		
+		return service.allInst();
+		
+	}
+	
+	@PostMapping("/inst")
+	public Insti postInst(@RequestBody Insti inst) throws Exception {
+		
+		Insti upInst = service.upInst(inst);
+		
+		return upInst;
+	}
+	
+	@GetMapping("/get-organs/{instName}")
+	public List<Organs> getAllOrgans(@RequestParam("instName") String instName) {
+		
+		
+		return service.organsbyInstName(instName);
+	}
+	
+	@PostMapping("/inst/update")
+	public Organs updateInstOrg(@RequestBody Organs org) {
+	    Optional<Organs> optionalOrgan = organsRepo.findById(org.getOrgId());
+	    
+	    if (optionalOrgan.isPresent()) {
+	        
+	        Organs exOrgan = optionalOrgan.get();
+	      
+	        BeanUtils.copyProperties(org, exOrgan, "id");
+	        
+	        return organsRepo.save(exOrgan);
+	    } else {
+	        return null;
+	    }
+	}
+	
+	@PostMapping("/inst/organ")
+	public Organs postInstOrg(@RequestBody Organs org) {
+		return 
+	}
+
+
+}

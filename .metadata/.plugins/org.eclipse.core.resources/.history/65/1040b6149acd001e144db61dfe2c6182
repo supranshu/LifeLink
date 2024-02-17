@@ -1,0 +1,25 @@
+package com.lifelink.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Insti {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private long instId;
+
+	public long getInstId() {
+		return instId;
+	}
+
+	public void setInstId(long instId) {
+		this.instId = instId;
+	}
+	
+	
+
+}
