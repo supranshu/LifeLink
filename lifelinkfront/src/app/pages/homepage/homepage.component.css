@@ -1,12 +1,16 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*{
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.header{
+
+/* Header styles */
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -18,348 +22,61 @@
     z-index: 100;
 }
 
-/* ********NAVBAR******* */
-.logo{
+.logo {
     font-size: 25px;
-    color:  #191cdf;
+    color: #191cdf;
     text-decoration: none;
     font-weight: 600;
 }
-.letters{
-    font-size: 36px;
-}
-.navbar a{
+
+.navbar a {
     font-size: 18px;
-    color:  #191cdf;
+    color: #191cdf;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
 }
 
-/* **********SECTION********** */
-.section{
+/* Section styles */
+.section {
     margin-top: 180px;
     text-align: center;
-    font-weight: 800;
-    font-size: 42px;
-}
-.section p{
-    font-size: 38px;
-}
-.form-container {
-    text-align: center;
-    margin-left: 35%;
-    width: 400px;
-    background: linear-gradient(#ffffff, #ffffff) padding-box,
-                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
-    border: 2px solid transparent;
-    padding: 32px 24px;
-    font-size: 14px;
-    font-family: inherit;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
-    border-radius: 16px;
-    background-size: 200% 100%;
-    animation: gradient 5s ease infinite;
-    margin-top: 20px;
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .form-container button:active {
-    scale: 0.95;
-  }
-  
-  .form-container .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .form-container .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  
-  .form-container .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: black;
-    font-weight: 600;
-    font-size: 12px;
-  }
-  
-  .form-container .form-group input {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    color: black;
-    font-family: inherit;
-    background-color: transparent;
-    border: 1px solid #414141;
-  }
-  
-  .form-container .form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border-radius: 8px;
-    resize: none;
-    color: black;
-    height: 96px;
-    border: 1px solid #414141;
-    background-color: transparent;
-    font-family: inherit;
-  }
-  
-  .form-container .form-group input::placeholder {
-    opacity: 0.5;
-  }
-  
-  .form-container .form-group input:focus {
-    outline: none;
-    border-color: #e81cff;
-  }
-  
-  .form-container .form-group textarea:focus {
-    outline: none;
-    border-color: #e81cff;
-  }
-  
-  .form-container .form-submit-btn {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    align-self: flex-start;
-    font-family: inherit;
-    color: #fff;
-    font-weight: 700;
-    width: 40%;
-    background:  #191cdf;
-    border: 1px solid #414141;
-    padding: 12px 16px;
-    font-size: inherit;
-    gap: 8px;
-    margin-top: 8px;
-    cursor: pointer;
-    border-radius: 6px;
-    
-  }
-  
-  /* .form-container .form-submit-btn:hover {
-
-} */
-  
-
-.paste-button {
-    position: relative;
-    display: block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .button {
-    background-color: #191cdf;
-    color: #fff;
-    padding: 10px 15px;
-    font-size: 15px;
-    font-weight: bold;
-    border: 2px solid transparent;
-    border-radius: 15px;
-    cursor: pointer;
-  }
-  
-  .dropdown-content {
-    display: none;
-    font-size: 13px;
-    position: absolute;
-    z-index: 1;
-    min-width: 200px;
-    background-color: #212121;
-    border: 2px solid #4c53af;
-    border-radius: 0px 15px 15px 15px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  
-  .dropdown-content a {
-    color: #191cdf;
-    padding: 8px 10px;
-    text-decoration: none;
-    display: block;
-    transition: 0.1s;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #191cdf;
-    color: #fff;
-  }
-  
-  .dropdown-content a:focus {
-    background-color: #fff;
-    color: #191cdf;
-  }
-  
-  .dropdown-content #top:hover {
-    border-radius: 0px 13px 0px 0px;
-  }
-  
-  .dropdown-content #bottom:hover {
-    border-radius: 0px 0px 13px 13px;
-  }
-  
-  .paste-button:hover button {
-    border-radius: 15px 15px 0px 0px;
-  }
-  
-  .paste-button:hover .dropdown-content {
-    display: block;
-  }
-  
-
-
-
-
-
-  .cl-toggle-switch {
-    position: relative;
-   }
-   
-   .cl-switch {
-    position: relative;
-    display: inline-block;
-    font-size: 18px;
-   }
-   /* Input */
-   .cl-switch > input {
-    appearance: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    z-index: -1;
-    position: absolute;
-    right: 6px;
-    top: -8px;
-    display: block;
-    margin: 0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    background-color: rgb(0, 0, 0, 0.38);
-    outline: none;
-    opacity: 0;
-    transform: scale(1);
-    pointer-events: none;
-    transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
-   }
-   /* Track */
-   .cl-switch > span::before {
-    content: "";
-
-    display: inline-block;
-    margin: 5px 0 5px 10px;
-    border-radius: 7px;
-    width: 36px;
-    height: 14px;
-    background-color: rgb(0, 0, 0, 0.38);
-    vertical-align: top;
-    transition: background-color 0.2s, opacity 0.2s;
-   }
-   /* Thumb */
-   .cl-switch > span::after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    right: 16px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-    transition: background-color 0.2s, transform 0.2s;
-   }
-   /* Checked */
-   .cl-switch > input:checked {
-    right: -10px;
-    background-color: #85b8b7;
-   }
-   
-   .cl-switch > input:checked + span::before {
-    background-color: #85b8b7;
-   }
-   
-   .cl-switch > input:checked + span::after {
-    background-color:#191cdf;
-    transform: translateX(16px);
-   }
-   /* Hover, Focus */
-   .cl-switch:hover > input {
-    opacity: 0.04;
-   }
-   
-   .cl-switch > input:focus {
-    opacity: 0.12;
-   }
-   
-   .cl-switch:hover > input:focus {
-    opacity: 0.16;
-   }
-   /* Active */
-   .cl-switch > input:active {
-    opacity: 1;
-    transform: scale(0);
-    transition: transform 0s, opacity 0s;
-   }
-   
-   .cl-switch > input:active + span::before {
-    background-color: #8f8f8f;
-   }
-   
-   .cl-switch > input:checked:active + span::before {
-    background-color: #191cdf;
-   }
-   /* Disabled */
-   .cl-switch > input:disabled {
-    opacity: 0;
-   }
-   
-   .cl-switch > input:disabled + span::before {
-    background-color: #ddd;
-   }
-   
-   .cl-switch > input:checked:disabled + span::before {
-    background-color: #bfdbda;
-   }
-   
-   .cl-switch > input:checked:disabled + span::after {
-    background-color: #191cdf;
 }
 
-/* CSS styles remain the same */
-
-/* Additional styles for the updated content */
-.section-heading {
+.section h1 {
     font-size: 48px;
     font-weight: bold;
     color: #191cdf;
     margin-bottom: 10px;
 }
 
-.section-description {
+.section p {
     font-size: 24px;
     color: #555;
     margin-bottom: 30px;
+}
+/* About Us styles */
+.about-us {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Set to 100% of the viewport height */
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #191cdf;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
