@@ -1,1 +1,11 @@
+<!-- dashboard.component.html -->
 
+<div>
+    <h2>Organizations</h2>
+    <ul>
+      <li *ngFor="let organization of organizations" (click)="navigateToOrganization(organization.instName)">
+        <a href="#">{{ organization.instName }} - {{ organization.instType }}</a>
+      </li>
+    </ul>
+  </div>
+  
