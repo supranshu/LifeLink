@@ -347,3 +347,19 @@
    .cl-switch > input:checked:disabled + span::after {
     background-color: #191cdf;
 }
+
+/* CSS styles remain the same */
+
+/* Additional styles for the updated content */
+.section-heading {
+    font-size: 48px;
+    font-weight: bold;
+    color: #191cdf;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 30px;
+}

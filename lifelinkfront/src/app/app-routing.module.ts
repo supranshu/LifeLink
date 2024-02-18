@@ -4,10 +4,14 @@ import { LoginComponent } from './pages/login/login.component';
 import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InstitutionComponent } from './pages/institution/institution.component';
+<<<<<<< HEAD
 import { OrganComponent } from './pages/organ/organ.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
+=======
+import { HomepageComponent } from './pages/homepage/homepage.component';
+>>>>>>> b97a86b346905ea9734226750628db6ca794bfbb
 
 
 const routes: Routes = [
@@ -39,7 +43,7 @@ const routes: Routes = [
     },
     {
       path:'org-page/:orgName/:instName',
-      component:OrganComponent,
+      component:HomepageComponent,
       pathMatch: 'full'
     },
     {

@@ -1,40 +1,27 @@
 <header class="header">
-    <!-- <img href="" class="logo"></img> -->
-    <img src="../../../assets/logo.png" alt="" class="logo">
+    <img src="assets/logo.png" alt="Organ Donor Site Logo" class="logo" height="50px" width="50px">
     <nav class="navbar">
         <a href="#" class="active">Home</a>
         <a href="#">About</a>
-        <a href="#">Servies</a>
+        <a href="#">Services</a>
         <a href="#">Contact</a>
     </nav>
 </header>
 
 <section class="section">
-    <i class="fa-solid fa-magnifying-glass"></i>Job<i class="fa-solid fa-binoculars"></i>Spy
-    <p>Find your dream job</p>
+    <h1 class="section-heading">Welcome to LifeLink</h1>
+    <p class="section-description">Revolutionizing Organ Donation Matching</p>
     <div class="form-container">
         <form class="form">
             <div class="form-group">
-                <label for="search">Search job</label>
-                <input required name="search" id="search" type="text">
-                <label for="">Location</label>
-                <input type="text" name="location" id="location" required>
+                <label for="search">Search for Organ Availability</label>
+                <input required name="search" id="search" type="text" placeholder="Enter organ or location">
             </div>
-            <div class="paste-button">
-                <button class="button">Sites &nbsp; ▼</button>
-                <div class="dropdown-content">
-                    <a id="top" href="#">LinkedIn</a>
-                    <a id="middle" href="#">Indeed</a>
-                    <a id="bottom" href="#">Apna</a>
-                </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" name="location" id="location" required placeholder="Enter your location">
             </div>
-            <div class="cl-toggle-switch">
-                <label class="cl-switch">Automation
-                    <input type="checkbox">
-                    <span></span>
-                </label>
-            </div>
-            <button type="submit" class="form-submit-btn">Submit</button>
+            <button type="submit" class="form-submit-btn">Search</button>
         </form>
     </div>
 </section>
