@@ -34,6 +34,7 @@ public class OrganService {
 	
 	public Insti upInst(Insti insti) throws Exception {
 		if(instiRepo.findById(insti.getInstId())!=null) {
+			
 			return this.instiRepo.save(insti);
 		}
 		else
