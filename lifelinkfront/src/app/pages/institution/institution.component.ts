@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import baseUrl from '../../services/helper';
 
@@ -12,7 +12,7 @@ export class InstitutionComponent implements OnInit {
   institutionName: string = '';
   organs: any[] = [];
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, private router:Router) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -31,5 +31,8 @@ export class InstitutionComponent implements OnInit {
         console.error('Error fetching organs:', error);
       }
     );
+  }
+  public navigateToOrgan(orgName:any,instName:any){
+    this.router.navigateByUrl(`/org-page/${orgName}/${instName}`); 
   }
 }

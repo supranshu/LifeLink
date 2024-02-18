@@ -3,8 +3,8 @@
 <div>
     <h2>Organs Available in {{ institutionName }}</h2>
     <ul>
-      <li *ngFor="let organ of organs">
-        {{ organ.orgName }} - {{ organ.donorInstName }}
+      <li *ngFor="let organ of organs" (click)="navigateToOrgan(organ.orgName,organ.donorInstName)">
+        <a href="javascript:void(0)">{{ organ.orgName }} - {{ organ.donorInstName }}</a>
       </li>
     </ul>
   </div>

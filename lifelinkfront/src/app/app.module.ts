@@ -23,11 +23,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InstitutionComponent } from './pages/institution/institution.component';
+import { OrganComponent } from './pages/organ/organ.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent
+    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, OrganComponent
     
   ],
   imports: [

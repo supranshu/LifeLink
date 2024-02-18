@@ -36,7 +36,7 @@ export class SingupComponent {
         this.router.navigateByUrl("/")
       },
       (error)=>{
-        this.snack.open("Something Went Wrong!!")
+        this.snack.open("Something Went Wrong!!",'',{duration:3000})
       }
     )
   }
