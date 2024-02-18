@@ -1,0 +1,47 @@
+<div class="organ-details" *ngIf="organs">
+    <h2>Organ Details</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>{{ organs[0]?.orgName }}</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>{{ organs[0]?.age }}</td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>{{ organs[0]?.gender }}</td>
+      </tr>
+      <tr>
+        <th>Blood Group</th>
+        <td>{{ organs[0]?.bloodGroup }}</td>
+      </tr>
+      <tr>
+        <th>Height</th>
+        <td>{{ organs[0]?.height }}</td>
+      </tr>
+      <tr>
+        <th>Weight</th>
+        <td>{{ organs[0]?.weight }}</td>
+      </tr>
+      <tr>
+        <th>Organ Condition</th>
+        <td>{{ organs[0]?.orgCondition }}</td>
+      </tr>
+      <tr>
+        <th>History</th>
+        <td>{{ organs[0]?.history }}</td>
+      </tr>
+      <tr>
+        <th>Donor Institution Name</th>
+        <td>{{ organs[0]?.donorInstName }}</td>
+      </tr>
+      <tr>
+        <th>Duration</th>
+        <td>{{ organs[0]?.duration }}</td>
+      </tr>
+    </table>
+    <button class="contact-button" (click)="contactOrganization()">Contact Organization</button>
+  </div>
+  

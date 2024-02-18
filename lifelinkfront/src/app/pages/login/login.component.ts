@@ -29,13 +29,13 @@ export class LoginComponent {
     this.login.loginUser(this.loginData).subscribe(
       (data:any)=>{
         if(data==true){
-          this.snack.open("login successfull")
+          this.snack.open("login successfull",'',{duration:3000})
           this.router.navigateByUrl("/dashboard")
         }else{
-          this.snack.open("invalid credentials")
+          this.snack.open("invalid credentials",'',{duration:3000})
         }
         (error:any)=>{
-          this.snack.open("Something is wrong")
+          this.snack.open("Something is wrong",'',{duration:3000})
         }
       }
     )
