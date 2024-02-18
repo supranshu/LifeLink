@@ -23,25 +23,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InstitutionComponent } from './pages/institution/institution.component';
-<<<<<<< HEAD
-import { OrganComponent } from './pages/organ/organ.component';
-=======
 import { HomepageComponent } from './pages/homepage/homepage.component';
->>>>>>> a703ef29a291c90d750972cf7ad64c867cfe96ba
+import { CommonModule } from '@angular/common';
+import { OrganComponent } from './pages/organ/organ.component';
 
 
 @NgModule({
   declarations: [
-<<<<<<< HEAD
-    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, OrganComponent
-=======
-    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, HomepageComponent
->>>>>>> a703ef29a291c90d750972cf7ad64c867cfe96ba
+    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, HomepageComponent, OrganComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,MatButtonModule,MatInputModule,MatFormFieldModule,FormsModule, HttpClientModule,MatSnackBarModule, MatCardModule, MatToolbarModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule, MatSelectModule, BrowserAnimationsModule,  
+    AppRoutingModule,MatButtonModule,MatInputModule,MatFormFieldModule,FormsModule, HttpClientModule,MatSnackBarModule, MatCardModule, MatToolbarModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule, MatSelectModule, BrowserAnimationsModule,CommonModule
   ],
   providers: [
     provideClientHydration(),
