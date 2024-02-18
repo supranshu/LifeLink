@@ -30,6 +30,7 @@ export class LoginComponent {
       (data:any)=>{
         if(data==true){
           this.snack.open("login successfull")
+          this.router.navigateByUrl("/dashboard")
         }else{
           this.snack.open("invalid credentials")
         }

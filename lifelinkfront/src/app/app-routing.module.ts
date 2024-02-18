@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { SingupComponent } from './pages/singup/singup.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,11 @@ const routes: Routes = [
     {
       path:"signup",
       component:SingupComponent,
+      pathMatch:"full"
+    },
+    {
+      path:"dashboard",
+      component:DashboardComponent,
       pathMatch:"full"
     }
 ];

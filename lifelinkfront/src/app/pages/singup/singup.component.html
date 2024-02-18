@@ -1,7 +1,8 @@
 <div class="container">
     <div class="signup-container">
       <h2>Sign Up</h2>
-      <form (ngSubmit)="onSubmit()" class="signup-form">
+      <form (ngSubmit)="formSubmit()" class="signup-form">
+       
         <div class="form-group">
           <label for="instName">Institution Name</label>
           <input type="text" class="form-control" id="instName" name="instName" [(ngModel)]="signData.instName" required>
@@ -21,6 +22,19 @@
           <label for="email">Email Address</label>
           <input type="email" class="form-control" id="email" name="email" [(ngModel)]="signData.email" required>
         </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" id="city" name="city" [(ngModel)]="signData.city" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input type="text" class="form-control" id="state" name="state" [(ngModel)]="signData.state" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" name="password" [(ngModel)]="signData.password" required>
+        </div>
+        
         <button type="submit" class="btn btn-primary">Sign Up</button>
       </form>
       <p class="login-link">Already have an account? <a routerLink="">Login here</a></p>
