@@ -28,7 +28,7 @@ public class OrganService {
 	
 	public List<Organs> organsbyInstName(String instName){
 		
-		return this.organsRepo.findByInstName(instName);
+		return this.organsRepo.findByDonorInstName(instName);
 	
 	}
 	

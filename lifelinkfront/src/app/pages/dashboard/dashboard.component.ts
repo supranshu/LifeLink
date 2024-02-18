@@ -33,7 +33,7 @@ export class DashboardComponent implements OnInit {
 
   public navigateToOrganization(instName:any){
 
-  this.router.navigateByUrl("/inst-page")    
+  this.router.navigateByUrl(`/inst-page/${instName}`); 
 
   }
 }

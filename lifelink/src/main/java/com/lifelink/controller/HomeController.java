@@ -64,11 +64,11 @@ public class HomeController {
 		return upInst;
 	}
 	
-	@GetMapping("/get-organs/{instName}")
-	public List<Organs> getAllOrgans(@PathVariable("instName") String instName) {
+	@GetMapping("/get-organs/{donorInstName}")
+	public List<Organs> getAllOrgans(@PathVariable("donorInstName") String donorInstName) {
 		
 		
-		return service.organsbyInstName(instName);
+		return service.organsbyInstName(donorInstName);
 	}
 	
 	@PostMapping("/inst/update")

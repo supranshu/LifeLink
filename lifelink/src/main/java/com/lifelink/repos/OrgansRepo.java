@@ -10,5 +10,5 @@ import com.lifelink.model.Organs;
 @Repository
 public interface OrgansRepo extends JpaRepository<Organs, Long> {
 
-	List<Organs> findByInstName(String instName);
+	List<Organs> findByDonorInstName(String instName);
 }

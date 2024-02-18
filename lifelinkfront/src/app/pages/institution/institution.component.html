@@ -1,0 +1,11 @@
+
+
+<div>
+    <h2>Organs Available in {{ institutionName }}</h2>
+    <ul>
+      <li *ngFor="let organ of organs">
+        {{ organ.orgName }} - {{ organ.donorInstName }}
+      </li>
+    </ul>
+  </div>
+  

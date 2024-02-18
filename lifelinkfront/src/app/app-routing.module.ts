@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './pages/login/login.component';
 import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { InstitutionComponent } from './pages/institution/institution.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,11 @@ const routes: Routes = [
       path:"dashboard",
       component:DashboardComponent,
       pathMatch:"full"
+    },
+    {
+      path: 'inst-page/:instName', 
+      component: InstitutionComponent,
+      pathMatch: "full"
     }
 ];
 

@@ -22,11 +22,12 @@ import { MatSelectModule } from '@angular/material/select';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { InstitutionComponent } from './pages/institution/institution.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent, SingupComponent, DashboardComponent
+    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent
     
   ],
   imports: [

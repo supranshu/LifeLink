@@ -14,7 +14,7 @@ public class Organs {
 	private long orgId;
 	private String orgName;
 	private String duration;
-	private String instName;
+	private String donorInstName;
 	private String bloodGroup;
 	private String age;
 	private String orgCondition;
@@ -32,13 +32,30 @@ public class Organs {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Organs(long orgId, String orgName, String duration, String instName, String bloodGroup, String age,
+
+	
+
+	public String getDonorInstName() {
+		return donorInstName;
+	}
+
+
+
+
+	public void setDonorInstName(String donorInstName) {
+		this.donorInstName = donorInstName;
+	}
+
+
+
+
+	public Organs(long orgId, String orgName, String duration, String donorInstName, String bloodGroup, String age,
 			String orgCondition, String history, String name, String height, String weight, String gender) {
 		super();
 		this.orgId = orgId;
 		this.orgName = orgName;
 		this.duration = duration;
-		this.instName = instName;
+		this.donorInstName = donorInstName;
 		this.bloodGroup = bloodGroup;
 		this.age = age;
 		this.orgCondition = orgCondition;
@@ -48,6 +65,9 @@ public class Organs {
 		this.weight = weight;
 		this.gender = gender;
 	}
+
+
+
 
 	public String getOrgCondition() {
 		return orgCondition;
@@ -124,13 +144,7 @@ public class Organs {
 		this.duration = duration;
 	}
 
-	public String getInstName() {
-		return instName;
-	}
-
-	public void setInstName(String instName) {
-		this.instName = instName;
-	}
+	
 
 	public String getOrgName() {
 		return orgName;
