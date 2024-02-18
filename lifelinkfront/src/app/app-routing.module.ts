@@ -4,6 +4,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InstitutionComponent } from './pages/institution/institution.component';
+import { HomepageComponent } from './pages/homepage/homepage.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,11 @@ const routes: Routes = [
     {
       path:"dashboard",
       component:DashboardComponent,
+      pathMatch:"full"
+    },
+    {
+      path:"homepage",
+      component:HomepageComponent,
       pathMatch:"full"
     },
     {
