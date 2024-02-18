@@ -1,20 +1,19 @@
 <div class="organ-details" *ngIf="inst">
-    <h2>Organ Details</h2>
-    <table>
+  <h2 class="section-title">Organization Contact Details</h2>
+  <div class="table-container">
+    <table class="organ-table">
       <tr>
         <th>Name</th>
         <td>{{ inst.instName }}</td>
       </tr>
       <tr>
         <th>Email</th>
-        <td>{{ inst.email }}</td>
+        <td><a class="email-link" href="mailto:{{ inst.email }}">{{ inst.email }}</a></td>
       </tr>
       <tr>
         <th>Contact Number</th>
         <td>{{ inst.contactNo }}</td>
       </tr>
-      <tr>
-        
-      </tr>
     </table>
   </div>
+</div>

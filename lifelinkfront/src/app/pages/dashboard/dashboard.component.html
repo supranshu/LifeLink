@@ -1,55 +1,25 @@
 <!-- dashboard.component.html -->
 
-<div>
+<!-- <div>
     <h2>Organizations</h2>
     <ul>
       <li *ngFor="let organization of organizations" (click)="navigateToOrganization(organization.instName)">
         <a href="javascript:void(0)">{{ organization.instName }} - {{ organization.instType }}</a>
       </li>
     </ul>
-  </div>
+  </div> -->
   
   
-  <div class="navbar">
-    <div>Hospital Name</div>
-    <div class="navbar-info">City, State</div>
+  <div  class="navbar">
+    <div>{{organizations[0].instName}}</div>
+    <div class="navbar-info">{{organizations[0].city}}, {{organizations[0].state}}</div>
   </div>
   
   <div class="card-container">
-    <div class="card" onclick="location.href='#';" style="background-color: #ffd1dc; border: 1px solid #ff91a4;">
-      <div class="card-body">
-        <h2 class="card-title">Card 1</h2>
-      </div>
+    <div *ngFor="let organization of organizations" (click)="navigateToOrganization(organization.instName)"  class="card"  style="background-color: #ffd1dc; border: 1px solid #ff91a4;">
+      <li  class="card-body">
+        <a href="javascript:void(0)" class="card-title">{{ organization.instName }} - {{ organization.instType }}</a>
+      </li>
     </div>
-    <!-- Duplicate this card code five more times -->
-    <!-- Card 2 -->
-    <div class="card" onclick="location.href='#';" style="background-color: #ffef96; border: 1px solid #e6b800;">
-      <div class="card-body">
-        <h2 class="card-title">Card 2</h2>
-      </div>
-    </div>
-    <!-- Card 3 -->
-    <div class="card" onclick="location.href='#';" style="background-color: #aaf0d1; border: 1px solid #2ecc71;">
-      <div class="card-body">
-        <h2 class="card-title">Card 3</h2>
-      </div>
-    </div>
-    <!-- Card 4 -->
-    <div class="card" onclick="location.href='#';" style="background-color: #d8a7b1; border: 1px solid #b35050;">
-      <div class="card-body">
-        <h2 class="card-title">Card 4</h2>
-      </div>
-    </div>
-    <!-- Card 5 -->
-    <div class="card" onclick="location.href='#';" style="background-color: #b5e7a0; border: 1px solid #5cb85c;">
-      <div class="card-body">
-        <h2 class="card-title">Card 5</h2>
-      </div>
-    </div>
-    <!-- Card 6 -->
-    <div class="card" onclick="location.href='#';" style="background-color: #b9d9eb; border: 1px solid #5bc0de;">
-      <div class="card-body">
-        <h2 class="card-title">Card 6</h2>
-      </div>
-    </div>
+    
   </div>

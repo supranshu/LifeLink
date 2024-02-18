@@ -97,7 +97,10 @@ public class HomeController {
 	
 	@PostMapping("/inst/organ")
 	public Organs postInstOrg(@RequestBody Organs org) {
-		return service.upOrg(org);
+	    
+//	    org.setOrgId(0); 
+
+	    return service.upOrg(org);
 	}
 	
 	@PostMapping("/inst-login")

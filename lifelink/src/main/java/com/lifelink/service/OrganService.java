@@ -45,9 +45,8 @@ public class OrganService {
 	
 	public Organs upOrg(Organs org) {
 			return this.organsRepo.save(org);
-		
-		
 	}
+	
 	public boolean login(Insti inst) {
 	    Optional<Insti> optionalInst = Optional.of(instiRepo.findByInstName(inst.getInstName()));
 	    
