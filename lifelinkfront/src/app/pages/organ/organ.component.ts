@@ -35,6 +35,6 @@ export class OrganComponent implements OnInit {
   }
 
   public contactOrganization(){
-    // Add your logic for contacting the organization here
+       
   }
 }
