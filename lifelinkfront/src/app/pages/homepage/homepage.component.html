@@ -1,1 +1,40 @@
-<p>homepage works!</p>
+<header class="header">
+    <!-- <img href="" class="logo"></img> -->
+    <img src="../../../assets/logo.png" alt="" class="logo">
+    <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Servies</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <i class="fa-solid fa-magnifying-glass"></i>Job<i class="fa-solid fa-binoculars"></i>Spy
+    <p>Find your dream job</p>
+    <div class="form-container">
+        <form class="form">
+            <div class="form-group">
+                <label for="search">Search job</label>
+                <input required name="search" id="search" type="text">
+                <label for="">Location</label>
+                <input type="text" name="location" id="location" required>
+            </div>
+            <div class="paste-button">
+                <button class="button">Sites &nbsp; ▼</button>
+                <div class="dropdown-content">
+                    <a id="top" href="#">LinkedIn</a>
+                    <a id="middle" href="#">Indeed</a>
+                    <a id="bottom" href="#">Apna</a>
+                </div>
+            </div>
+            <div class="cl-toggle-switch">
+                <label class="cl-switch">Automation
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+            <button type="submit" class="form-submit-btn">Submit</button>
+        </form>
+    </div>
+</section>
