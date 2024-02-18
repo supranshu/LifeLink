@@ -4,7 +4,7 @@
     <h2>Organizations</h2>
     <ul>
       <li *ngFor="let organization of organizations" (click)="navigateToOrganization(organization.instName)">
-        <a href="#">{{ organization.instName }} - {{ organization.instType }}</a>
+        <a href="#">{{ organization.instName }} - {{ organization.instType }} - {{organizations.city}}</a>
       </li>
     </ul>
   </div>
