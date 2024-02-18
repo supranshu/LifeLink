@@ -64,9 +64,7 @@ public class OrganService {
 	    }
 	}
 
-	public Insti singleInst(String instName) {
-		return this.instiRepo.findByInstName(instName);
-	}
+	
 	
 	
 	

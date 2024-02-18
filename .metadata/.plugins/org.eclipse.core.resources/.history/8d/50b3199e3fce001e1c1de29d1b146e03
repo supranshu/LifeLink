@@ -56,13 +56,6 @@ public class HomeController {
 		
 	}
 	
-	@GetMapping("/get-single-inst/{instName}")
-	public Insti getSingleInst(@PathVariable("instName") String instName) {
-		
-		return this.service.singleInst(instName);
-		
-	}
-	
 	@PostMapping("/singup-inst")
 	public Insti postInst(@RequestBody Insti inst) throws Exception {
 		

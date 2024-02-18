@@ -6,6 +6,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InstitutionComponent } from './pages/institution/institution.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { OrganComponent } from './pages/organ/organ.component';
 
 
 const routes: Routes = [
@@ -37,11 +38,11 @@ const routes: Routes = [
     },
     {
       path:'org-page/:orgName/:instName',
-      component:HomepageComponent,
+      component:OrganComponent,
       pathMatch: 'full'
     },
     {
-      path: 'contact/:donorInstName',
+      path: 'contact/:instName',
       component:ContactComponent,
       pathMatch:'full'
     }

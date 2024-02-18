@@ -1,1 +1,20 @@
-<p>contact works!</p>
+<div class="organ-details" *ngIf="inst">
+    <h2>Organ Details</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>{{ inst.instName }}</td>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <td>{{ inst.email }}</td>
+      </tr>
+      <tr>
+        <th>Contact Number</th>
+        <td>{{ inst.contactNo }}</td>
+      </tr>
+      <tr>
+        
+      </tr>
+    </table>
+  </div>
