@@ -18,9 +18,12 @@ public class Insti {
 	private String contactNo;
 	private String email;
 	private String password;
+	private String certificate;
 	
 	
 	
+	
+
 	
 
 	
@@ -32,14 +35,8 @@ public class Insti {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String toString() {
-		return "Insti [instId=" + instId + ", instName=" + instName + ", instType=" + instType + ", city=" + city
-				+ ", state=" + state + ", contactNo=" + contactNo + ", email=" + email + ", password=" + password + "]";
-	}
-
 	public Insti(long instId, String instName, String instType, String city, String state, String contactNo,
-			String email, String password) {
+			String email, String password, String certificate) {
 		super();
 		this.instId = instId;
 		this.instName = instName;
@@ -49,6 +46,15 @@ public class Insti {
 		this.contactNo = contactNo;
 		this.email = email;
 		this.password = password;
+		this.certificate = certificate;
+	}
+
+	public String getCertificate() {
+		return certificate;
+	}
+
+	public void setCertificate(String certificate) {
+		this.certificate = certificate;
 	}
 
 	public String getContactNo() {

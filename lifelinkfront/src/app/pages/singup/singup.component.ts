@@ -18,12 +18,13 @@ export class SingupComponent {
     contactNo: "",
     email: "",
     password: "",
+    certification: '',
   }
 
   constructor(private snack:MatSnackBar,private service:LoginService,private router:Router) { }
 
   formSubmit() {
-    this.snack.open("clicked")
+    this.snack.open("clicked",'',{duration:3000})
     if(this.signData.instName.trim()==''|| this.signData.instName.trim()==null && this.signData.password.trim()=='' || this.signData.password.trim()==null ){
       this.snack.open("Fill all the form Fields",'',{
         duration:3000,
