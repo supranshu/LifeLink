@@ -24,16 +24,18 @@ import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InstitutionComponent } from './pages/institution/institution.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { CommonModule } from '@angular/common';
+import { OrganComponent } from './pages/organ/organ.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, HomepageComponent
+    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, HomepageComponent, OrganComponent
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,MatButtonModule,MatInputModule,MatFormFieldModule,FormsModule, HttpClientModule,MatSnackBarModule, MatCardModule, MatToolbarModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule, MatSelectModule, BrowserAnimationsModule,  
+    AppRoutingModule,MatButtonModule,MatInputModule,MatFormFieldModule,FormsModule, HttpClientModule,MatSnackBarModule, MatCardModule, MatToolbarModule, MatIconModule, MatListModule, MatGridListModule, MatMenuModule, MatSelectModule, BrowserAnimationsModule,CommonModule
   ],
   providers: [
     provideClientHydration(),

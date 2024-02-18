@@ -1,7 +1,7 @@
 <div class="container">
     <mat-card>
       <mat-card-header>
-        <mat-card-title>Login</mat-card-title>
+        <p class="login">Login</p>
       </mat-card-header>
       <mat-card-content>
         <form (ngSubmit)="formSubmit()">
@@ -13,7 +13,7 @@
             <mat-label>Password</mat-label>
             <input matInput type="password" placeholder="Enter password" [(ngModel)]="loginData.password" name="password" required>
           </mat-form-field>
-          <button mat-raised-button color="primary" type="submit">Login</button>
+          <button mat-raised-button color="primary" type="submit" class="btn">Login</button>
         </form>
       </mat-card-content>
     </mat-card>

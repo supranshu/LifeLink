@@ -5,6 +5,7 @@ import { SingupComponent } from './pages/singup/singup.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InstitutionComponent } from './pages/institution/institution.component';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,11 @@ const routes: Routes = [
       path:'org-page/:orgName/:instName',
       component:HomepageComponent,
       pathMatch: 'full'
+    },
+    {
+      path: 'contact/:donorInstName',
+      component:ContactComponent,
+      pathMatch:'full'
     }
 ];
 

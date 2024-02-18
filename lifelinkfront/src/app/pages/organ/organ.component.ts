@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import baseUrl from '../../services/helper'; 
 
+
 @Component({
   selector: 'app-organ',
   templateUrl: './organ.component.html',
@@ -34,7 +35,7 @@ export class OrganComponent implements OnInit {
     );
   }
 
-  public contactOrganization(){
-       
+  public contactOrganization(donorInstName:any){
+       this.router.navigateByUrl(`/contact/${donorInstName}`)
   }
 }

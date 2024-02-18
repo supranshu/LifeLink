@@ -1,0 +1,55 @@
+.container{
+    margin-top: 180px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 42px;
+
+    text-align: center;
+    margin-left: 35%;
+    width: 400px;
+    background: linear-gradient(#ffffff, #ffffff) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+    margin-top: 100px;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+
+    
+    
+}
+
+.login{
+    text-align: center;
+    /* font-weight: 1000; */
+    font-size: 36px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: flex;
+    margin-left: 120px;
+}
