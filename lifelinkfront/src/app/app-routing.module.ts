@@ -7,6 +7,7 @@ import { InstitutionComponent } from './pages/institution/institution.component'
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { OrganComponent } from './pages/organ/organ.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 
 const routes: Routes = [
@@ -44,6 +45,11 @@ const routes: Routes = [
     {
       path: 'contact/:instName',
       component:ContactComponent,
+      pathMatch:'full'
+    },
+    {
+      path:"admin",
+      component:AdminComponent,
       pathMatch:'full'
     }
 ];

@@ -27,11 +27,12 @@ import { HomepageComponent } from './pages/homepage/homepage.component';
 import { CommonModule } from '@angular/common';
 import { OrganComponent } from './pages/organ/organ.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, HomepageComponent, OrganComponent, ContactComponent
+    AppComponent,LoginComponent, SingupComponent, DashboardComponent, InstitutionComponent, HomepageComponent, OrganComponent, ContactComponent, AdminComponent
     
   ],
   imports: [

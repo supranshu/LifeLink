@@ -10,16 +10,20 @@
   </div> -->
   
   
-  <div  class="navbar">
-    <div>{{organizations[0].instName}}</div>
-    <div class="navbar-info">{{organizations[0].city}}, {{organizations[0].state}}</div>
+  <div class="navbar" *ngIf="organizations[0]?.instName !== 'Admin'">
+    <div>{{ organizations[0]?.instName }}</div>
+    <div class="navbar-info">{{ organizations[0]?.city }}, {{ organizations[0]?.state }}</div>
   </div>
   
   <div class="card-container">
-    <div *ngFor="let organization of organizations" (click)="navigateToOrganization(organization.instName)"  class="card"  style="background-color: #ffd1dc; border: 1px solid #ff91a4;">
-      <li  class="card-body">
-        <a href="javascript:void(0)" class="card-title">{{ organization.instName }} - {{ organization.instType }}</a>
-      </li>
-    </div>
-    
-  </div>
+    <ng-container *ngFor="let organization of organizations">
+      <div *ngIf="organization.instName !== 'Admin'" (click)="navigateToOrganization(organization.instName)" class="card" style="background-color: #ffd1dc; border: 1px solid #ff91a4;">
+        <li class="card-body">
+          <a href="javascript:void(0)" class="card-title">{{ organization.instName }} - {{ organization.instType }}</a>
+        </li>
+      </div>
+    </ng-container>
+  </div>
+  
+  
+  

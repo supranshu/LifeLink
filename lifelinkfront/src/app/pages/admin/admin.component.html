@@ -1,0 +1,29 @@
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Institution Name</th>
+        <th>NOTTO Ceritfication No.</th>
+        <th>City</th>
+        <th>Contact Number</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let org of organizations">
+        <tr *ngIf="org.instName !== 'Admin'">
+          <td>{{ org.instName }}</td>
+          <td>{{ org.certificate }}</td>
+          <td>{{ org.city }}</td>
+          <td>{{ org.contactNo }}</td>
+          <td>{{ org.email }}</td>
+          <td>
+            <button class="action-btn accept-btn">Accept</button>
+            <button class="action-btn reject-btn">Reject</button>
+          </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+</div>
